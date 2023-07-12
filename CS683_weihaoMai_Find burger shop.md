@@ -5,61 +5,51 @@
 
 ## Overview 
 
-Find burger shop  is a mobile application designed to help burger  lovers find  their favorite shops . At its core, Find burger shop  will use real-time location data to dynamically display the location of food shops near the user’s location.
+Find burger shop is a mobile app that helps burger enthusiasts locate their preferred stores. The main feature of Find burger shop is that it uses real-time location data to show the food stores near the user’s location dynamically.
 
 ## Related Work
 
-This is a web version of the mobile application I have proposed for my project. The site is built using MongoDB, Node.js, and Express, with Handlebars templating. The Express server provides an API which to create and authenticate user accounts, retrieve burger shops listings from Yelp, and a static menu. I plan to use these APIs to serve data to the mobile application I will be building this course.
+- Java is the default language for Android App development, and the Android Framework also uses Java by default. Proficiency in Java language is an essential skill for Android developers . 
+
+- Jetpack Compose: Jetpack Compose is a tool for simplifying and speeding up interface development on Android, reducing the amount of code to write, and using powerful tools and intuitive Kotlin API. 
+- Flutter: Flutter is a cross-platform development framework from Google that enables the development of high-performance, high-fidelity Android and iOS apps using the Dart language.
+-  I will use the above knowledge and API to complete this project
 
 ## Requirement Analysis and Testing 
 
-essential, desirable and optional.
+iteration 0 completes only the necessary functional analysis
 
 |Essential | Description |
 |---|---|
-|Signup| A user can create a new account using their name, email, and password with confirmation. The app cannot be used without an account. |
-|Login| The user can login using a previously created account. |
-|View a map of burger shops| The application displays a map with pins showing food truck locations in the specified area. |
-|Search for burger shops| The app allows the user to enter a location on the map and search the area. |
-|Add a burger shops| Vendors can submit their burger shops to the application. |
-
-|Desirable |Description|
-|---|---|
-|View a list nearby burger shop|The app displays an optional tab which displays a list of food trucks in the area.  |
-|Add food truck to favorites|The user can tap an icon to add the burger shops to their favorites list |
-
-
+|Signup| Users register an account with the software in order to use other features of the software. Users are required to provide some basic information, such as user name, password, email address, etc., and agree to the software's terms of service and privacy policy. After successful registration, users can receive a confirmation email and click on the link to activate the account. |
+|Settings| Users can modify their user name, password, email address, profile picture and other information. Notifications: Users can turn on or off push notifications for the software, as well as choose the type and frequency of notifications. |
+|Login| Users log in to existing accounts on the software in order to access other features of the software. Users need to enter the correct username and password, or use a third-party platform (such as google, QQ, etc.) authorization to log in. After successful login, users can see their personal information and Settings, as well as the main interface of the software. |
+|View a map of burger shops| Users can view the location and information of nearby burger restaurants on the software.  The software will display an icon of the eligible burger restaurant on the map, and users can click on the icon to view the details of the burger shops, such as name, address, phone number, rating, reviews, etc. |
+|Search for burger shops| Users can search for burger restaurants by entering keywords, selecting categories or swiping a map. |
+|Add a burger shops| Burger shop owners can add their own location to the app and set an address on the map |
+|place an order| Users can also make calls, navigate or place orders directly through the software. |
 
 ## Design and Implementation
 
-•	Activities – login and sign up screen, map screen, food truck details
-•	Databases/content providers – saved trucks
-•	Settings – user preferences
-•	Services (notifications)
-•	GPS – tracking locations
+•	Databases – saved app information,such as user information and shop information
+
+•	Activities –  Various interactions with the app
+
+•	Settings – Users can modify their user name, password, email address, profile picture and other information.
+
+•	Map: The user can choose the display mode of the map (such as satellite, street, etc.)
+•	GPS – Determine the geographic location of the user
 •	Google APIs – maps and geolocating
-•	Firebase – authentication and firestore/database
 
-
-
-## Project Structure
-This is not needed for iteration 0
-    
+​    
 
 ## Timeline
 
-| Iteration | Application Requirements (E/D/O)                             | Android Components and Features      |
-| --------- | ------------------------------------------------------------ | ------------------------------------ |
-| 1         | 1. Signup (E), 2. Login (E)                                  | Activities                           |
-| 2         | 3. View map of burger shops(E), 4. Search for burger shops(E) | Activities, Services,                |
-| 3         | 5. Add burger shop (E)                                       | Realtime Database, Google Places API |
-| 4         | 7. View burger shop details (E)                              | Database, Firestore, Activities      |
-| 5         | 6. Update burger shop location, 2. Add burger shop to favorites (D), | Settings, Database                   |
-
-
-## Future Work (Optional)
-
-
-
-## References
+| Iteration | Application Requirements (E/D/O) | Android Components and Features |
+| --------- | -------------------------------- | ------------------------------- |
+| 1         | 1. Signup (E), 2. Login (E)      | Activities, Database            |
+| 2         | 3.View a map of burger shops(E)  | Activities, Services,           |
+| 3         | 4.Search for burger shops(E)     | Database, Google maps API       |
+| 4         | 5.place an order(E)              | bank API                        |
+| 5         | 6.update user information(E)     | Settings, Database              |
 
